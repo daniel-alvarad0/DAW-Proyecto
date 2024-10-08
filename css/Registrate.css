@@ -1,0 +1,32 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del nav */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Estilo del ul para que no tenga puntos */
+nav ul {
+    list-style-type: none;
+    display: flex; /* Para que los elementos se dispongan en fila */
+    justify-content: space-around; /* Espacio entre elementos */
+}
+
+/* Estilo de los links */
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Quitar el subrayado */
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Color al pasar el mouse por encima */
+    border-radius: 4px;
+}
