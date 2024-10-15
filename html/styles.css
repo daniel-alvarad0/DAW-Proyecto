@@ -1,0 +1,642 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-color: #003f5c;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Esto centrará el contenido horizontalmente */
+    align-items: center; /* Esto lo alineará verticalmente si es necesario */
+    background-color: #333; /* Color de fondo, por ejemplo */
+    padding: 1rem; /* Añade un poco de espacio alrededor */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 100px; /* Espacio entre los elementos */
+    padding: 2; /* Elimina cualquier padding predeterminado */
+    margin: 2; /* Elimina cualquier margen predeterminado */
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #ff6b6b; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.login-btn:hover {
+    background-color: #ee5253; /* Color al pasar el ratón */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.top-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: darkkhaki;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Vision Section */
+.vision {
+    position: relative; /* Posiciona el contenedor como referencia para el texto */
+    margin: 2rem 0;
+    width: 80%; /* Ajusta el ancho del contenedor principal */
+    height: 450px; /* Ajusta la altura del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.vision-image {
+    width: 100%;
+    height: 450px;
+    object-fit: center; /* Asegura que la imagen cubra todo el contenedor */
+    display: block;
+    margin: 0 auto; /* Esto centra el elemento imagen en la página */
+}
+
+.vision-text {
+    position: absolute; /* Posiciona la caja de texto encima de la imagen */
+    top: 50%; /* Ajusta la caja de texto al centro verticalmente */
+    left: 50%; /* Ajusta la caja de texto al centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra exactamente la caja de texto */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para la caja de texto */
+    color: white; /* Color del texto blanco */
+    padding: 6rem;
+    border-radius: 80px;
+    max-width: 900px;
+    text-align: center; /* Centra el texto dentro de la caja */
+}
+
+.vision-text h2 {
+    font-size: 2rem;
+}
+
+.vision-text p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #f7f7f7;
+    color: rgb(240, 0, 0);
+    padding: 2rem 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columns ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-columns ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.social-icons {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    gap: 40px; /* Espacio entre los elementos */
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margen */
+}
+
+.social-icons li {
+    display: flex; /* Alinea imagen y texto */
+    align-items: center; /* Centra verticalmente */
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px; /* Ajusta el tamaño de los íconos */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+.social-icons a {
+    text-decoration: none; /* Elimina subrayado en los enlaces */
+    color: #000; /* Color del texto (ajústalo según tu diseño) */
+    transition: color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.social-icons a:hover {
+    color: #ff6b6b; /* Color al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 500px;
+    margin-right: 20px;
+}
+
+.login-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.login-form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    padding: 2rem;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-form h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    color: white;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form input::placeholder {
+    color: #b3b3b3;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    background-color: #ee5253;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botones de "Regresar" e "Iniciar Sesión" */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.back-btn, .login-btn {
+    width: 48%;
+    padding: 0.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover, .login-btn:hover {
+    background-color: #ee5253;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* administracion" */
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Main Admin Page */
+.admin-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #f0f0f0;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo {
+    width: 400px;
+    height: auto;
+    border: 3px solid #007BFF;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-panel {
+    background-color: #a0a0a0;
+    border-radius: 90px;
+    padding: 100px;
+    width: 350px;
+}
+
+.admin-btn {
+    width: 120%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.admin-btn:hover {
+    background-color: #444;
+}
+
+/* Back Button */
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+   
+
+
+
+
+
+
+
+/* promocion */
+
+/* Contenedor principal para evitar interferencias */
+.page-viaje * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.page-viaje {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Estructura general */
+.page-viaje .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page-viaje .sidebar {
+    display: flex;
+    justify-content: center; /* Esto centrará el contenido horizontalmente */
+    align-items: center; /* Esto lo alineará verticalmente si es necesario */
+    background-color: #333; /* Color de fondo, por ejemplo */
+    padding: 1rem; /* Añade un poco de espacio alrededor */
+}
+
+.page-viaje .sidebar .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.page-viaje .sidebar ul {
+    list-style: none;
+    display: flex;
+    gap: 100px; /* Espacio entre los elementos */
+    padding: 2; /* Elimina cualquier padding predeterminado */
+    margin: 2; /* Elimina cualquier margen predeterminado */
+}
+
+.page-viaje .sidebar ul li {
+    display: inline;
+}
+
+.page-viaje .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.page-viaje .sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.page-viaje .main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.page-viaje .promociones h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.page-viaje .promociones .tabs {
+    margin: 20px 0;
+}
+
+.page-viaje .promociones .tab-button {
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-viaje .promociones .tab-button.active {
+    background-color: #f35d5f;
+}
+
+.page-viaje .promocion-imagen img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.page-viaje .planes {
+    margin-top: 40px;
+}
+
+.page-viaje .planes h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.page-viaje .plan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.page-viaje .plan h3 {
+    font-size: 22px;
+    color: #ff5a5f;
+}
+
+.page-viaje .plan p {
+    font-size: 20px;
+    color: #333;
+}
+
+.page-viaje .plan ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.page-viaje .plan ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.page-viaje .plan button {
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-viaje .plan button:hover {
+    background-color: #f35d5f;
+}
+
+.page-viaje footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.page-viaje footer h3 {
+    margin-bottom: 20px;
+}
+
+.page-viaje footer .social-media a {
+    margin: 0 10px;
+}
+
+.page-viaje footer .social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+

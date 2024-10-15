@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Envolver todo en el contenedor principal .page-viaje -->
+    <div class="page-viaje">
+        <div class="container">
+            <!-- Menú lateral -->
+            <aside class="sidebar">
+                <img src="img/bus.png" alt="Logo de viaje" class="logo">
+                <ul class="menu">
+                    <li><a href="explorar.html">Explorar</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    
+                    <button class="login-btn" onclick="window.location.href='iniciar-sesion.html'">Iniciar Sesión</button>
+                </ul>
+            </aside>
+
+            <!-- Contenido principal -->
+            <main class="main-content">
+                <section class="promociones">
+                    <h2>Promociones Exclusivas</h2>
+                    <div class="tabs">
+                        <button class="tab-button active">Mensual</button>
+                        <button class="tab-button">Anual</button>
+                    </div>
+                    <div class="promocion-imagen">
+                        <img src="img/tour.webp" alt="Promoción de Viaje">
+                    </div>
+                </section>
+
+                <section class="planes">
+                    <h2>Planes Disponibles</h2>
+
+                    <!-- Plan Básico -->
+                    <div class="plan">
+                        <h3>Plan Básico</h3>
+                        <p>$50 / mes</p>
+                        <ul>
+                            <li>Incluye transporte</li>
+                            <li>Tour guiado</li>
+                            <li>Mapas y guías</li>
+                            <li>Acceso VIP a eventos</li>
+                            <li>Soporte 24/7</li>
+                        </ul>
+                        <button>Reservar aquí</button>
+                    </div>
+
+                    <!-- Plan Estándar -->
+                    <div class="plan">
+                        <h3>Plan Estándar</h3>
+                        <p>$100 / mes</p>
+                        <ul>
+                            <li>Todo lo del plan básico</li>
+                            <li>Acceso a zonas exclusivas</li>
+                            <li>Descuentos en restaurantes</li>
+                            <li>Excursiones adicionales</li>
+                            <li>Guía privado</li>
+                        </ul>
+                        <button>Reservar aquí</button>
+                    </div>
+
+                    <!-- Plan Premium -->
+                    <div class="plan">
+                        <h3>Plan Premium</h3>
+                        <p>$150 / mes</p>
+                        <ul>
+                            <li>Todo lo del plan estándar</li>
+                            <li>Experiencias personalizadas</li>
+                            <li>Acceso ilimitado a eventos</li>
+                            <li>Cena privada con el chef</li>
+                            <li>Chofer privado</li>
+                        </ul>
+                        <button>Reservar aquí</button>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer con redes sociales -->
+            <footer>
+                <h3>Síguenos</h3>
+                <div class="social-media">
+                    <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+
